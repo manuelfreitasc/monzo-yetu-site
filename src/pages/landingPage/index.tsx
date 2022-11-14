@@ -16,7 +16,7 @@ function LandingPage() {
                             <img src={Logo} alt="" />
                         </div>
                         <div id='actions' className=''>
-                            <Link to="/dashbord" className="bg-[#F79421] py-2 px-5 flex gap-3">
+                            <Link to="#" className="bg-[#F79421] py-2 px-5 flex gap-3">
                                 
                                
                                 <BsFileEarmarkMinus size={20} className="text-white text-base" /> Retirar senha virtual
