@@ -2,7 +2,7 @@ import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { ReactNode, useState } from 'react'
+import { ReactNode, useRef } from 'react'
 import SliderCard from '../SlideCard'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
@@ -12,7 +12,15 @@ interface Slick {
 }
 
 export default function Carousel() {
-    const [sliderRef, setSliderRef] = useState<any>(null)
+    const ref = useRef<any>(null);
+
+    const handleNextSlide = () => {
+        ref.current.slickNext();
+    };
+
+    const handlePrevSlide = () => {
+        ref.current.slickPrev();
+    };
 
     const sliderSettings = {
 
@@ -40,7 +48,7 @@ export default function Carousel() {
 
     return (
         <div className='content container mx-auto px-8  gap-8'>
-            <Slider  ref={setSliderRef} {...sliderSettings} >
+            <Slider ref={ref} {...sliderSettings} >
                 <SliderCard
                     mLeft=""
                     desc="Super, realmente é fácil e muito eficiente, 
@@ -49,7 +57,7 @@ export default function Carousel() {
                     title='Paulo Mendes'
                     image="/comemt1.png"
                 />
-                
+
                 <SliderCard
                     mLeft="ml-8"
                     desc="Estou super satisfeito, realmente a plataforma
@@ -60,8 +68,8 @@ export default function Carousel() {
                           fique a espera da minah vez no onmforto da minha casa.
                           "
                     title='Fernando Jorge'
-                    image="/comemt2.png" 
-                    />
+                    image="/comemt2.png"
+                />
                 <SliderCard mLeft="ml-8" desc="" title='' image="/comemt1.png" />
                 <SliderCard mLeft="ml-8" desc="" title='' image="/comemt1.png" />
                 <SliderCard mLeft="ml-8" desc="" title='' image="/comemt1.png" />
@@ -70,13 +78,15 @@ export default function Carousel() {
 
 
             <div className='mt-5 flex gap-2 z-10 justify-end'>
-                <button onClick={sliderRef.slickPrev} className="py-5 px-3  border-2 border-gray-00 flex  items-center justify-center h-0 hover:bg-white transition-all">
+                <button onClick={handlePrevSlide} className="py-5 px-3  border-2 border-gray-00 flex  items-center justify-center h-0 hover:bg-white transition-all">
                     <AiOutlineArrowLeft size={24} />
                 </button>
-                <button onClick={sliderRef.slickNext} className="py-5 px-3 border-2  border-[#F79421] bg-[#F79421] flex  items-center justify-center h-0  focus:brightness-90 transition-all">
+                <button onClick={handleNextSlide} className="py-5 px-3 border-2  border-[#F79421] bg-[#F79421] flex  items-center justify-center h-0  focus:brightness-90 transition-all">
                     <AiOutlineArrowRight size={24} />
                 </button>
             </div>
         </div>
     )
 }
+
+
