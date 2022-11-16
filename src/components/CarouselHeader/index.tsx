@@ -3,8 +3,6 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { ReactNode, useState } from 'react'
-import SliderCard from '../SlideCard'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import HeaderCard from '../HeaderCard'
 
@@ -13,7 +11,7 @@ interface Slick {
 }
 
 export default function CarouselHeader() {
-    const [sliderRef, setSliderRef] = useState(null)
+    const [sliderRef, setSliderRef] = useState<any>(null)
 
     const sliderSettings = {
         slidesToShow: 1,

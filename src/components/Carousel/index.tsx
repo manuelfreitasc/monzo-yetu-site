@@ -12,7 +12,7 @@ interface Slick {
 }
 
 export default function Carousel() {
-    const [sliderRef, setSliderRef] = useState(null)
+    const [sliderRef, setSliderRef] = useState<any>(null)
 
     const sliderSettings = {
 
@@ -40,7 +40,7 @@ export default function Carousel() {
 
     return (
         <div className='content container mx-auto px-8  gap-8'>
-            <Slider ref={setSliderRef} {...sliderSettings} >
+            <Slider  ref={setSliderRef} {...sliderSettings} >
                 <SliderCard
                     mLeft=""
                     desc="Super, realmente é fácil e muito eficiente, 
@@ -70,10 +70,10 @@ export default function Carousel() {
 
 
             <div className='mt-5 flex gap-2 z-10 justify-end'>
-                <button onClick={sliderRef?.slickPrev} className="py-5 px-3  border-2 border-gray-00 flex  items-center justify-center h-0 hover:bg-white transition-all">
+                <button onClick={sliderRef.slickPrev} className="py-5 px-3  border-2 border-gray-00 flex  items-center justify-center h-0 hover:bg-white transition-all">
                     <AiOutlineArrowLeft size={24} />
                 </button>
-                <button onClick={sliderRef?.slickNext} className="py-5 px-3 border-2  border-[#F79421] bg-[#F79421] flex  items-center justify-center h-0  focus:brightness-90 transition-all">
+                <button onClick={sliderRef.slickNext} className="py-5 px-3 border-2  border-[#F79421] bg-[#F79421] flex  items-center justify-center h-0  focus:brightness-90 transition-all">
                     <AiOutlineArrowRight size={24} />
                 </button>
             </div>

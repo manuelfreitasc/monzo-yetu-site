@@ -1,19 +1,12 @@
 import React from 'react';
 import { BsFileEarmarkMinus } from "react-icons/bs";
-import { AiOutlineArrowLeft, AiOutlineArrowRight, AiFillStar } from "react-icons/ai";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { useSwiper } from 'swiper/react';
-// import { Container } from './styles';
 import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
-import Slider from '../slider/index';
-import SliderCard from '../../components/SlideCard/index';
 import Carousel from '../../components/Carousel';
 import CarouselHeader from '../../components/CarouselHeader';
 
 
 function LandingPage() {
-    const swiper = useSwiper();
     return (
         <div className="">
             <header className="w-full bg-[#FFECD6]">

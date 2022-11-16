@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import LandingPage from './pages/landingPage'
-import Slider from './pages/slider/index';
 
 function App() {
   return (
@@ -11,10 +10,6 @@ function App() {
         <Route
           path="/"
           element={<LandingPage />}
-        />
-          <Route
-          path="/slide"
-          element={<Slider />}
         />
       </Routes>
   )
