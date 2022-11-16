@@ -27,7 +27,7 @@ function LandingPage() {
                     <CarouselHeader /> 
 
                         <div id='caroucel' className='flex flex-row '>
-                            <img src="/your-phone.png" alt="" className="justify-end w-full md:w-[600px]" />
+                            <img src="/your-phone.png" alt="" className="justify-end w-full" />
                         </div>
                     </div>
 

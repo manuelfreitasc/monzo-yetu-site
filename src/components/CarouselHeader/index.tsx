@@ -48,7 +48,7 @@ export default function CarouselHeader() {
 
 
     return (
-        <div className='md:w-[700px] pl-8'>
+        <div className=' pl-8'>
             <Slider ref={ref} {...sliderSettings} >
                <HeaderCard
                     title="Retira uma senha virtual e evite fila"
