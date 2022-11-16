@@ -2,11 +2,18 @@ import React from 'react';
 import { BsFileEarmarkMinus } from "react-icons/bs";
 import { AiOutlineArrowLeft, AiOutlineArrowRight, AiFillStar } from "react-icons/ai";
 import { RiDoubleQuotesL } from "react-icons/ri";
+import { useSwiper } from 'swiper/react';
 // import { Container } from './styles';
 import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+import Slider from '../slider/index';
+import SliderCard from '../../components/SlideCard/index';
+import Carousel from '../../components/Carousel';
+import CarouselHeader from '../../components/CarouselHeader';
+
 
 function LandingPage() {
+    const swiper = useSwiper();
     return (
         <div className="">
             <header className="w-full bg-[#FFECD6]">
@@ -17,43 +24,17 @@ function LandingPage() {
                         </div>
                         <div id='actions' className=''>
                             <Link to="#" className="bg-[#F79421] py-2 px-5 flex gap-3">
-                                
-                               
+
+
                                 <BsFileEarmarkMinus size={20} className="text-white text-base" /> Retirar senha virtual
                             </Link>
                         </div>
                     </nav>
                     <div className="container  mx-auto flex flex-col md:flex-row md:justify-between relative md:bg-[url('/desktop-header.svg')]  bg-no-repeat bg-contain bg-clip-border">
-                        <div id='content' className="mt-24 px-8 md:py-12 w-fullss">
-                            <h1 className="text-3xl md:text-4xl  w-[300px] md:w-[400px] font-semibold">
-                                Retira uma senha
-                                virtual e evite fila
-                            </h1>
-                            <p className="mt-6 text-base font-normal md:w-[500px]">
-                                Retira a sua senha de qualquer instituição
-                                e espera a sua vez sem estresse, no conforto da sua casa ou em
-                                qualquer sitio e recebe notificação no seu telemovel quando esta a chegar a sua vez.
-                            </p>
-                            <div className='mt-5 flex gap-2 z-10'>
-                                <a href="" className="py-5 px-3  border-2 border-white flex  items-center justify-center h-0 hover:bg-white transition-all">
-                                    <AiOutlineArrowLeft size={24} />
-                                </a>
-                                <a href="" className="py-5 px-3 border-2 border-[#F79421] bg-[#F79421] flex  items-center justify-center h-0 hover:bg-transparent hover:border-white transition-all">
-                                    <AiOutlineArrowRight size={24} />
-                                </a>
-                            </div>
-                        </div>
+                    <CarouselHeader /> 
 
-                        <div id='caroucel' className='flex flex-row'>
-                            <div className='mt-12 flex gap-2 z-10 absolute md:left-0 md:bottom-44 hidden'>
-                                <a href="" className="py-5 px-3 ml-8 border-2 border-white flex  items-center justify-center h-0 hover:bg-white transition-all">
-                                    <AiOutlineArrowLeft size={24} />
-                                </a>
-                                <a href="" className="py-5 px-3 border-2 border-[#F79421] bg-[#F79421] flex  items-center justify-center h-0 hover:bg-transparent hover:border-white transition-all">
-                                    <AiOutlineArrowRight size={24} />
-                                </a>
-                            </div>
-                            <img src="/your-phone.png" alt="" className="justify-end w-full md:w-[500px]" />
+                        <div id='caroucel' className='flex flex-row '>
+                            <img src="/your-phone.png" alt="" className="justify-end w-full md:w-[600px]" />
                         </div>
                     </div>
 
@@ -155,14 +136,14 @@ function LandingPage() {
                                     <img src="/bank-icon.svg" alt="" className="md:h-[130px] max-[768px]:ml-3" />
                                     <div className="flex  flex-col items-center justify-center">
                                         <strong className='text-white text-xl'>+ 23</strong>
-                                        <span className='text-white text-xs text-[#F79421]'>Instituições</span>
+                                        <span className=' text-xs text-[#F79421]'>Instituições</span>
                                     </div>
                                 </div>
                                 <div className='flex'>
                                     <img src="/card-icon.svg" alt="" className="md:h-[130px]" />
                                     <div className="flex  flex-col items-center justify-center">
                                         <strong className='text-white text-xl'>+ 23</strong>
-                                        <span className='text-white text-xs text-[#F79421]'>Senhas</span>
+                                        <span className=' text-xs text-[#F79421]'>Senhas</span>
                                     </div>
                                 </div>
                             </div>
@@ -171,60 +152,14 @@ function LandingPage() {
                     </div>
                 </section>
                 <section className="max-[768px]:bg-white md:bg-[url('/testemun.svg')] py-32  bg-no-repeat  bg-cover">
-
-                    <div id='content1' className=" container mx-auto px-8 md:flex-row">
-
-                        <div className="grid  grid-cols-1 md:grid-cols-2   gap-8  ">
-                            <div className="w-full p-9  rounded-lg bg-white flex flex-col gap-6 border border-[#edececee]">
-                                <RiDoubleQuotesL size={44} className=" text-[#f793217c]" />
-                                <p className=' text-base font-light'>
-                                    Super, realmente é fácil e muito eficiente, em vez de
-                                    ficar na fila a gastara tempo, esperando a minha vez de ser
-                                    atendido, com a Control, foi mais tranquilo e sem estresse.
-                                </p>
-                                <div className='w-full flex items-center gap-5'>
-                                    <img src="/comemt1.png" alt="" className='w-20 rounded-full' />
-                                    <div>
-                                        <strong className='text-lg'>Paulo Mendes</strong>
-                                        <div className='flex gap-2 mt-1'>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-full p-9  rounded-lg bg-white flex flex-col gap-6 border border-[#edececee]">
-                                <RiDoubleQuotesL size={44} className=" text-[#f793217c]" />
-                                <p className=' text-base font-light'>
-                                    Super, realmente é fácil e muito eficiente, em vez de
-                                    ficar na fila a gastara tempo, esperando a minha vez de ser
-                                    atendido, com a Control, foi mais tranquilo e sem estresse.
-                                </p>
-                                <div className='w-full flex items-center gap-5'>
-                                    <img src="/comemt1.png" alt="" className='w-20 rounded-full' />
-                                    <div>
-                                        <strong className='text-lg'>Paulo Mendes</strong>
-                                        <div className='flex gap-2 mt-1'>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                            <AiFillStar  size={24} className="text-[#F79421]"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <Carousel />
                 </section>
             </main>
             <footer>
                 <section className='bg-transparent'>
 
                     <div id='content1' className="py-14 container mx-auto px-8 md:flex gap-6 justify-between">
+                   
                         <div>
                             <h1 className="text-3xl w-[200px] font-semibold">
                                 Nossos
@@ -235,28 +170,15 @@ function LandingPage() {
                             </p>
                         </div>
 
-                        <div className='md:w-2/5 grid grid-cols-4   mt-10 gap-2 '>
-                            <div className="px-2  rounded-lg bg-white flex flex-col items-center justify-center  py-5  shadow shadow-sm shadow-gray-400 ">
-                                <img src="/BIC.svg" alt="" className='' />
-                            </div>
-                            <div className="px-2   rounded-lg bg-white flex flex-col items-center justify-center  py-5  shadow shadow-sm shadow-gray-400 ">
-                                <img src="/BFA.svg" alt="" className='' />
-                            </div>
-                            <div className="px-2   rounded-lg bg-white flex flex-col items-center justify-center  py-5  shadow shadow-sm shadow-gray-400 ">
-                                <img src="/BAI.svg" alt="" className='' />
-                            </div>
-                            <div className="px-4   rounded-lg bg-white flex flex-col items-center justify-center  py-3  shadow shadow-sm shadow-gray-400 ">
-                                <img src="/GOV.svg" alt="" className='' />
-                            </div>
-                            <div className="px-2   rounded-lg bg-white flex flex-col items-center justify-center  py-5  shadow shadow-sm shadow-gray-400 ">
-                                <img src="/AGT.svg" alt="" className='' />
-                            </div>
-                            <div className="px-2   rounded-lg bg-white flex flex-col items-center justify-center  py-5  shadow shadow-sm shadow-gray-400 ">
-                                <img src="/ECONOMICO.svg" alt="" className='' />
-                            </div>
-                            <div className="rounded-lg bg-white flex flex-col items-center justify-center  py-3 shadow shadow-sm shadow-gray-400 ">
-                                <img src="/BNI.svg" alt="" className='' />
-                            </div>
+                        <div className='md:w-2/5 grid grid-cols-4   mt-10  '>
+                         <img src="/BIC.svg" alt="" className='' />
+                           <img src="/BFA.svg" alt="" className='' />
+                             <img src="/BAI.svg" alt="" className='' />
+                           <img src="/GOV.svg" alt="" className='' />
+                             <img src="/AGT.svg" alt="" className='' />
+                            <img src="/BM.svg" alt="" className='' />
+                              <img src="/BNI.svg" alt="" className='' />
+                            
                         </div>
                     </div>
                 </section>
@@ -287,6 +209,7 @@ function LandingPage() {
                     </div>
                 </section>
             </footer>
+           
         </div>
     );
 }
