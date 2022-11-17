@@ -19,7 +19,7 @@ interface HeaderCardProp {
 
 function HeaderCard({ title, desc }: HeaderCardProp) {
     return (
-        <div id='content' className="mt-24  md:py-12 w-full">
+        <div id='content' className="w-full">
             <h1 className="text-3xl md:text-4xl  w-[300px] md:w-[400px] font-semibold">
                 {title}
             </h1>

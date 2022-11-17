@@ -23,11 +23,11 @@ function LandingPage() {
                             </Link>
                         </div>
                     </nav>
-                    <div className="container  mx-auto flex flex-col md:flex-row md:justify-between relative md:bg-[url('/desktop-header.svg')]  bg-no-repeat bg-contain bg-clip-border">
+                    <div className="container mx-auto items-center flex flex-col md:flex-row md:justify-between relative md:bg-[url('/desktop-header.svg')]  bg-no-repeat bg-contain bg-clip-border">
                     <CarouselHeader /> 
 
-                        <div id='caroucel' className='flex flex-row '>
-                            <img src="/your-phone.png" alt="" className="justify-end w-full" />
+                        <div id='caroucel' className='flex flex-row'>
+                            <img src="/your-phone.png" alt="" className="justify-end h-[500px] w-[100%]" />
                         </div>
                     </div>
 
@@ -119,12 +119,12 @@ function LandingPage() {
 
                     </div>
                     <div className="py-20 container mx-auto px-8 md:bg-[url('/desktop-bg.svg')]  bg-no-repeat">
-                        <div className="w-full py-5 md:h-[220px]  flex items-center flex-row  gap-4  rounded-2xl bg-black relative">
+                        <div className="w-full py-5 md:h-[220px]  flex items-center max-[767px]:justify-center md:justify-between flex-row  gap-4  rounded-2xl bg-black relative">
                             <div className='h-full bg-slate-300 hidden md:block'>
                                 <img src="/desktop-img.png" alt="" className="h-[300px] z-10 absolute bottom-0" />
 
                             </div>
-                            <div className='md:w-full flex  items-center justify-center gap-9'>
+                            <div className='lg:w-full  flex  lg:items-center lg:justify-center  md:gap-1 md:pr-9'>
                                 <div className='flex'>
                                     <img src="/bank-icon.svg" alt="" className="md:h-[130px] max-[768px]:ml-3" />
                                     <div className="flex  flex-col items-center justify-center">

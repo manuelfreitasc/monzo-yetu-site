@@ -48,7 +48,7 @@ export default function CarouselHeader() {
 
 
     return (
-        <div className=' pl-8'>
+        <div className='md:w-[390px] lg:w-[700px] px-8  '>
             <Slider ref={ref} {...sliderSettings} >
                <HeaderCard
                     title="Retira uma senha virtual e evite fila"
@@ -62,9 +62,7 @@ export default function CarouselHeader() {
                 />
             </Slider>
 
-
-
-            <div className='mt-0 flex gap-2 z-10 justify-start'>
+            <div className='max-[768px]:pt-7 flex gap-2  justify-start'>
                 <button onClick={handlePrevSlide} className="py-5 px-3  border-2 border-gray-00 flex  items-center justify-center h-0 hover:bg-white transition-all">
                     <AiOutlineArrowLeft size={24} />
                 </button>
