@@ -43,7 +43,7 @@ function LandingPage() {
                 to="section0"
                 smooth={true}
                 duration={500}
-                className="w-full cursor-pointer hover:text-blue-900 text-lg"
+                className="w-full cursor-pointer transition-colors hover:text-blue-900 text-lg"
               >
                 Principal
               </Link>
@@ -51,7 +51,7 @@ function LandingPage() {
                 to="section2"
                 smooth={true}
                 duration={500}
-                className="w-full cursor-pointer hover:text-blue-900 text-lg"
+                className="w-full cursor-pointer transition-colors hover:text-blue-900 text-lg"
               >
                 Sobre App
               </Link>
@@ -59,7 +59,7 @@ function LandingPage() {
                 to="section3"
                 smooth={true}
                 duration={500}
-                className="w-full cursor-pointer hover:text-blue-900 text-lg"
+                className="w-full cursor-pointer transition-colors hover:text-blue-900 text-lg"
               >
                 Módulos
               </Link>
@@ -67,7 +67,7 @@ function LandingPage() {
                 to="section4"
                 smooth={true}
                 duration={500}
-                className="w-full cursor-pointer hover:text-blue-900 text-lg"
+                className="w-full cursor-pointer transition-colors hover:text-blue-900 text-lg"
               >
                 Contactos
               </Link>
