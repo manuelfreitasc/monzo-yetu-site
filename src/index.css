@@ -18,6 +18,11 @@ body {
   border-radius: 33px;
 }
 
+
+.bg-h{
+  background-image: url(assets/desktop.svg);
+}
+
 .swiper {
   width: 300px;
   height: 300px;

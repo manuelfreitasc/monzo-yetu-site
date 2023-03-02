@@ -8,7 +8,7 @@ import Carousel from "../../components/Carousel";
 import "react-multi-carousel/lib/styles.css";
 import CarouselHeader from "../../components/CarouselHeader";
 import { IoMdAdd } from "react-icons/io";
-import SliderCard from "../../components/SlideCard";
+import bgDesktop from "../../assets/desktop.svg";
 import { AiFillInstagram, AiFillLinkedin, AiTwotoneSetting } from "react-icons/ai";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -32,8 +32,10 @@ function Chack() {
 function LandingPage() {
   return (
     <>
-      <header className="w-full h-[100vh] bg-[url('desktop.svg')] bg-no-repeat bg-cover bg-right flex flex-col justify-between overflow-hidden">
-        <div className="container mx-auto px-8 my-8 min-[900px]:rounded-[20px] min-[900px]:bg-[url('header-desktop.svg')] bg-no-repeat bg-cover">
+      <header
+        className={`w-full h-[100vh] bg-[url('assets/desktop.svg')] bg-no-repeat bg-cover bg-right flex flex-col justify-between overflow-hidden`}
+      >
+        <div className="container mx-auto px-8 my-8 min-[900px]:rounded-[20px] min-[900px]:bg-[url('assets/header-desktop.svg')] bg-no-repeat bg-cover">
           <div className="w-full flex min-[900px]:items-center  justify-between pt-2 pb-2 max-[900px]:flex-col max-[900px]:gap-7">
             <img src="logo.svg" alt="" className="max-[900px]:w-[180px]" />
             <ul className="ml-48 w-full flex gap-1 items-center max-[900px]:hidden">
@@ -108,7 +110,7 @@ function LandingPage() {
       </header>
       <main>
         <section className="bg-[#EFF2FF]">
-          <div className="flex p-9  gap-6 flex-col container mx-auto px-8  bg-[url('modolo.svg')]  bg-cover bg-no-repeat">
+          <div className="flex p-9  gap-6 flex-col container mx-auto px-8  bg-[url('assets/modolo.svg')]  bg-cover bg-no-repeat">
             <h1 className="font-bold text-3xl">Nossos parceiros</h1>
             <div className="flex  items-center gap-6">
               <ul className="flex items-center w-full gap-5">
@@ -123,7 +125,7 @@ function LandingPage() {
         </section>
 
         <section className="w-full" id="section2">
-          <div className="flex bg-[url('left-top1.svg')] pt-32 pb-20 items-center container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
+          <div className="flex bg-[url('assets/left-top1.svg')] pt-32 pb-20 items-center container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
             <div className="w-full h-full flex flex-col   gap-7 ">
               <h1 className="text-3xl font-bold max-w-[900px] ">
                 Monzo Yetu é o sistema ideal para oseu condomínio.
@@ -150,7 +152,7 @@ function LandingPage() {
         </section>
 
         <section className="w-full   bg-[#EFF2FF]" id="section3">
-          <div className="w-full h-full flex flex-col items-center  pt-20 pb-20 gap-2 container mx-auto px-8  bg-[url('modolo.svg')]  bg-cover bg bg-no-repeat  ">
+          <div className="w-full h-full flex flex-col items-center  pt-20 pb-20 gap-2 container mx-auto px-8  bg-[url('assets/modolo.svg')]  bg-cover bg bg-no-repeat  ">
             <h1 className="text-3xl font-bold max-w-[900px] ">
               Módulos do Sistema
             </h1>
@@ -237,7 +239,7 @@ function LandingPage() {
         </section>
 
         <section className="w-full">
-          <div className="flex bg-[url('left-top1.svg')] pt-32 pb-20 items-center gap-64 container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
+          <div className="flex bg-[url('assetsleft-top1.svg')] pt-32 pb-20 items-center gap-64 container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
             <div className="max-[900px]:hidden">
               <img src="morador.png" alt="" className="" />
             </div>
@@ -285,7 +287,7 @@ function LandingPage() {
         </section>
 
         <section className="w-full   bg-[#EFF2FF]">
-          <div className="flex bg-[url('left-top1.svg')] pt-32 pb-20 items-center  container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
+          <div className="flex bg-[url('assets/left-top1.svg')] pt-32 pb-20 items-center  container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
             <div className="w-full h-full flex flex-col   gap-7 ">
               <h1 className="text-3xl font-bold max-w-[900px] ">
                 Gestão de Porteiros
@@ -328,7 +330,7 @@ function LandingPage() {
         </section>
         <section className="w-full   ">
           <div
-            className="flex bg-[url('left-top1.svg')] pt-28 pb-20  flex-col  container mx-auto px-8  bg-no-repeat bg-cover  bg-left
+            className="flex bg-[url('assets/left-top1.svg')] pt-28 pb-20  flex-col  container mx-auto px-8  bg-no-repeat bg-cover  bg-left
          
           "
           >
@@ -379,7 +381,7 @@ function LandingPage() {
         </section>
 
         <section className="w-full   ">
-          <div className="flex bg-[url('left-top1.svg')] pt-32 pb-20 items-center gap-64 container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
+          <div className="flex bg-[url('assets/left-top1.svg')] pt-32 pb-20 items-center gap-64 container mx-auto px-8  bg-no-repeat bg-cover  bg-left">
             <div className="max-[900px]:hidden">
               <img src="man-expert.png" alt="" className="w-[770px]" />
             </div>
