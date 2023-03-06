@@ -110,7 +110,7 @@ function LandingPage() {
             </div>
             <img
               src="mo.svg"
-              className="justify-end max-[600px]:w-[400px] min-[900px]:hidden"
+              className="justify-end max-[600px]:w-[300px] min-[900px]:hidden"
               alt=""
             />
             <img
