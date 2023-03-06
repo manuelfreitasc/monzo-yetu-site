@@ -104,8 +104,19 @@ function LandingPage() {
               </div>
             </form>
           </div>
-
-          <img src="mobile-banner.svg" className="justify-end" alt="" />
+          <div className="relative">
+            <div className="max-[900px]:w-[140px] animate-bounce absolute bottom-48 max-[900px]:bottom-38">
+              <img src="/2.svg" alt="" />
+            </div>
+            <img
+              src="mobile-banner.png"
+              className="justify-end max-[900px]:w-[500px]"
+              alt=""
+            />
+            <div className="max-[900px]:w-[140px] animate-bounce absolute bottom-12 right-0">
+              <img src="/1.svg" alt="" />
+            </div>
+          </div>
         </div>
       </header>
       <main>
