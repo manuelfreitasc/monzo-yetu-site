@@ -83,7 +83,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 max-[900px]:grid-cols-1  container mx-auto min-[900px]:pl-8">
+        <div className="grid grid-cols-2  max-[900px]:grid-cols-1  container mx-auto min-[900px]:pl-8">
           <div className="min-[900px]:mt-52">
             <h1 className="text-center  min-[900px]:text-left min-[900px]:text-5xl text-3xl font-bold">
               Sistema de controle de acesso e gestão de condomínio
@@ -104,16 +104,21 @@ function LandingPage() {
               </div>
             </form>
           </div>
-          <div className="relative">
-            <div className="max-[900px]:w-[140px] animate-bounce absolute bottom-48 max-[900px]:bottom-38">
+          <div className="relative max-[600px]:flex max-[600px]:justify-center max-[600px]:items-center">
+            <div className="max-[900px]:w-[140px] max-[900px]:left-2 left-0 animate-bounce absolute bottom-48 max-[900px]:bottom-32">
               <img src="/2.svg" alt="" />
             </div>
             <img
-              src="mobile-banner.png"
-              className="justify-end max-[900px]:w-[500px]"
+              src="mo.svg"
+              className="justify-end max-[600px]:w-[400px] min-[900px]:hidden"
               alt=""
             />
-            <div className="max-[900px]:w-[140px] animate-bounce absolute bottom-12 right-0">
+            <img
+              src="mobile-banner.png"
+              className="justify-end max-[600px]:w-[300px] max-[900px]:hidden"
+              alt=""
+            />
+            <div className="max-[900px]:w-[140px] max-[900px]:right-5 animate-bounce absolute bottom-12 right-0">
               <img src="/1.svg" alt="" />
             </div>
           </div>
