@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "or": "^0.2.0",
     "primereact": "^8.7.2",
     "react": "^18.2.0",

@@ -1,6 +1,11 @@
+@import "../node_modules/slick-carousel/slick/slick-theme.css"; 
+@import "../node_modules/slick-carousel/slick/slick.css"; 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 body {
   font-family: inter;
@@ -21,6 +26,12 @@ body {
 
 .bg-h{
   background-image: url(assets/desktop.svg);
+}
+
+.accesse{
+  background: linear-gradient(165.03deg, #E2E7FF 15.8%, rgba(226, 231, 255, 0) 93.97%);
+border: 1px solid rgba(255, 255, 255, 0.54);
+filter: drop-shadow(0px 0px 28px rgba(0, 0, 0, 0.1));
 }
 
 .swiper {
